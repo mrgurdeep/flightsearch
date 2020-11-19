@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 1.5em;
+    padding: 15px;
+    background: #1e52a4;
+    color: #eaeaea;
+}
+
+.search-panel,
+.results {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #dadada;
+}
+
+.results {
+    width: 75%;
+    background: #ffffff;
+}
+
+.no-flights {
+    text-align:center;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.tabs {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #a79f9f;
+    border-radius: 5px 5px 0 0;
+    width: 42%;
+    text-align: center;
+}
+
+.tabs.selected {
+    background: #1e52a4;
+    color: white;
+    border-color: #1e52a4;
+}
+
+.form {
+    padding: 10px;
+    border: 1px solid #a79f9f;
+    font-size: 0.8em;
+}
+
+.form input {
+    width: 100%;
+    margin:5px 0;
+    height: 20px;
+}
+
+.field-wrapper {
+    margin-bottom: 10px;
+}
+
+.field-wrapper .error {
+    font-size: 0.9em;
+    color:#a90101;
+}
+
+.form button {
+    padding: 5px;
+    background: #1e52a4;
+    color: white;
+    border-color: #1e52a4;
+}
+
+.trip-summary {
+    padding: 20px;
+    background: #dadada;
+    color: black;
+}
+
+.city-summary, .date-summary {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.city-summary {
+    width: 65%;
+    font-size:1.5em;
+}
+
+.date-summary {
+    width:35%;
+    font-size: 0.9em;
+}
+
+.date-summary span {
+    display: block;
+}
+
+.flight {
+    margin: 15px 0;
+    padding: 15px;
+    background: #dadada;
+}
+
+.price {
+    font-size: 1.5em;
+}
+
+.flight-info {
+    width: 33%;
+    display: inline-block;
+}
+
+.flight-info div {
+    margin: 5px 0;
+}
+
+.flight-number {
+    font-size:0.75em;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    padding: 10px;
+    background: #037303;
+    color: white;
+    border: none;
+}
+
+.refine-search {
+    border: 1px solid #a79f9f;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #1e52a4;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #1e52a4;
+    cursor: pointer;
+}
+
+.max-value, .min-value {
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 5px 0;
+    width: 50%;
+}
+
+.max-value {
+    text-align: right;
+}
+
+@media only screen and (max-width : 768px) {
+    .search-panel,
+    .results {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .flight-info {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+    }
+    .city-summary, .date-summary {
+        display: block;
+        width: 100%;
+    }
+}
